@@ -185,9 +185,5 @@ $('p').each(function(){
 		html = html.split(" " + equivalents[x][0] + '.').join(" " + equivalents[x][1] + '.');
 		html = html.split(" " + equivalents[x][0] + ',').join(" " + equivalents[x][1] + ',');
 	}
-	$(this).html(html);
-});
 
-/* Not working:
-waste away
-*/
+});
