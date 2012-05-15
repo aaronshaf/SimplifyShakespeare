@@ -1,5 +1,3 @@
-// 2 Nephi 5
-
 $('p').each(function(){
 	var x,html = $(this).html();
 	var equivalents = [
