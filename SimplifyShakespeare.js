@@ -1,11 +1,11 @@
-(function(){
+(function() {
 	var v = "1.7";
-	if (window.jQuery === undefined || window.jQuery.fn.jquery < v) {
+	if(window.jQuery === undefined || window.jQuery.fn.jquery < v) {
 		var done = false;
 		var script = document.createElement("script");
 		script.src = "http://ajax.googleapis.com/ajax/libs/jquery/" + v + "/jquery.min.js";
-		script.onload = script.onreadystatechange = function(){
-			if (!done && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")) {
+		script.onload = script.onreadystatechange = function() {
+			if(!done && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")) {
 				done = true;
 				initMyBookmarklet();
 			}
@@ -17,8 +17,8 @@
 
 	function initMyBookmarklet() {
 		(window.myBookmarklet = function() {
-			$('p').each(function(){
-				var x,html = $(this).html();
+			$('p').each(function() {
+				var x, html = $(this).html();
 				var equivalents = [
 					['Amen',''],
 					['And it came to pass that',''],
@@ -197,9 +197,8 @@
 					['recollection','memory'],
 					[',',''],
 					['Now,','']
-					
 				];
-				for(x = 0;x < equivalents.length;x++) {
+				for( x = 0; x < equivalents.length; x++) {
 					html = html.split(" " + equivalents[x][0] + ' ').join(" " + equivalents[x][1] + ' ');
 					html = html.split(" " + equivalents[x][0] + '.').join(" " + equivalents[x][1] + '.');
 					html = html.split(" " + equivalents[x][0] + ',').join(" " + equivalents[x][1] + ',');
@@ -208,4 +207,4 @@
 			});
 		})();
 	}
-})();
+})(); 
