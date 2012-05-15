@@ -1,4 +1,4 @@
 SimplifyShakespeare
 ===================
 
-Drag <a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://foo.bar/baz.js';})();">this link</a> too your bookmarks. Then ye can worketh its magic.
+Draggeth <a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://raw.github.com/aaronshaf/SimplifyShakespeare/master/SimplifyShakespeare.js';})();">this link</a> to thine bookmarks bar. Then ye can worketh its magic.
